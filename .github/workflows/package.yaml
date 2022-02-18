@@ -17,14 +17,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       -
-        name: Get web-ext
-        run: npm install --global web-ext
-      -
         name: Build extension
-        run: web-ext build
+        run: npm run build-ext
       - 
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "web-ext-artifacts/track_scraper-0.1.zip"
+          artifacts: "web-ext-artifacts/track_scraper-*.zip"
           omitBody: true
           token: ${{ secrets.GHCR_TOKEN }}

@@ -1,0 +1,18 @@
+{
+  "name": "epidemic-track-scraper",
+  "version": "0.2",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-ext": "web-ext build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devnull-twitch/epidemic-track-scraper.git"
+  },
+  "keywords": [],
+  "author": "DevNull",
+  "devDependencies": {
+    "web-ext": "^6.7.0"
+  }
+}
