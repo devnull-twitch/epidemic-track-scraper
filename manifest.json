@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Track scraper",
+    "version": "0.1",
+    "permissions": [
+        "https://devnullga.me/*",
+        "storage"
+    ],
+    "options_ui": {
+        "browser_style": true,
+        "page": "options.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.epidemicsound.com/*"],
+            "js": ["scraper.js"]
+        }
+    ]
+}
